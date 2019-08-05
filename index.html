@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= initial-scale=1.0">
+    <meta name="author" content= "Cristina Fernández Arquisola">
+    <meta name= "description" content= "Esto es una calculadora del índice tobillo brazo elaborada por Cristina Fernández para la GAPSA">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora del Índice Tobillo Brazo</title>
+
+    <script src="https://kit.fontawesome.com/1c7bba2342.js"></script>
+
+    <link rel= "stylesheet" href="estilos.css">
+
+</head>
+
+
+
+
+<body>  
+    
+    <div class="agrupar">
+        
+    <header id= "cabecera">
+    
+            <h1>                  <u>Calculadora del Índice Tobillo Brazo</u>
+                <br>
+            </h1>
+    </header>
+
+    
+
+<!-- inicio de la calculadora de ITB-->
+<section>
+    
+    
+    <p>Inserte los valores de tensión arterial en los recuardros correspondientes. 
+        <br>
+    La aplicación realizará el cálculo del Índice Tobillo Brazo de manera automática.
+    <br></br>
+    Si tiene dudas sobre la realización de la técnica, puede consultar este vídeo realizado por residentes de Enfermería Familiar y Comunitaria de Salamanca en el siguiente enlace.
+    </p>
+    
+    <a href= "https://www.youtube.com/watch?v=o9-cpP1hig0" ><p style= "text-align: center"> Enlace al video explicativo del ITB para profesionales de enfermería </a>
+    
+    <br></br>
+
+
+ <!-- Inicio de calculadora-->
+
+<form class="form1">
+    
+
+
+    <ul class= "listadoarterias">
+
+         
+
+        <li class="arterias">
+            <div>
+
+            <label><b>LADO<br>IZQUIERDO</b> </label>
+            <input type="number" name="TPI" id="TPI" placeholder="Tibial izquierda" class="inputstyle" min="0" max="300" maxlength="3" autofocus/>
+            <input type="number" name="PI" id="PI" placeholder="Pedia izquerda" class="inputstyle"/>
+            <input type="number" name="HI" id="HI" placeholder="Humeral izquierda" class="inputstyle"/>
+        </div>
+        </li>
+
+        <li>
+            <div class="nombres">
+                <label><b>ARTERIAS</b></label>
+            </div>
+            
+            <div class="nombres">
+                <label><i class="fas fa-chevron-left"></i>  TIBIAL POSTERIOR  <i class="fas fa-chevron-right"></i></label>
+                
+            </div>
+            <div class="nombres">
+                <label><i class="fas fa-chevron-left"></i>     PEDIA     <i class="fas fa-chevron-right"></i></label>
+            </div>
+            <div class="nombres">
+                <label><i class="fas fa-chevron-left"></i>       HUMERAL     <i class="fas fa-chevron-right"></i></label>
+            </div>
+            
+        </li> 
+
+        <li class="arterias">
+            <div>
+                <label><b>LADO<br>DERECHO</b></label>
+                <input type="number" name="TPD"  id="TPD" placeholder="Tibial derecha" class="inputstyle"/>
+                <input type="number" name="PD" id="PD"  placeholder="Pedia derecha" class="inputstyle"/>
+                <input type="number" name="HD" id="HD"  placeholder="Humeral derecha" class="inputstyle"/>
+            </div>
+        </li>  
+    </ul>
+        <div class="calcularITB">
+            <button type="button" onclick="calculo();">Calcular ITB &nbsp <i class="fas fa-stethoscope"></i>
+            </button>
+                 
+        </div>
+
+<div>
+    <ul class= "resultadoitb">
+
+        <li class="ITBizq">
+            <div>
+
+            <label><b>ITB<br>IZQUIERDO</b> </label>
+            <input type="text" name="ITBizq" id="resultadoITBI" class="inputstyle"
+            readonly/>
+
+            </div>
+        </li>
+    
+        <li>
+            <div class="nombres">
+                <label><b></b></label>
+            </div>
+                
+            <div class="nombres">
+                <label><i class="fas fa-chevron-left"></i>  RESULTADO ITB  <i class="fas fa-chevron-right"></i></label>
+                    
+        </li> 
+    
+        <li class="ITBdcho">
+            <div>
+                <label><b>ITB<br>DERECHO</b></label>
+                <input type="text" name="ITBdcho" id="resultadoITBD" class="inputstyle"
+                readonly/>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<input type="hidden" id="resultadoI" placeholder="resultadoI" readonly>
+
+<input type="hidden" id="resultadoD" placeholder="resultadoD" readonly>
+
+<input type="hidden" id="resultadoH" placeholder="resultadoH" readonly>
+
+    </form>
+<br></br>
+
+
+
+
+
+</div>
+
+</section>
+
+    <script src="apps.js"></script>
+
+    <footer class= "bajo">
+
+            <h6> Desarrollado por Cristina Fernández Arquisola 
+                <br>
+                Para el Blog EIR EFyC (2019)
+                <br>
+
+               
+                          
+    
+            </h6>
+
+            
+                <a href="https://udsalamancaeir.wordpress.com/"> <img src="blog eir (4).png" alt="Logo Blog EIR EFyC" width="80" height="auto"></a>
+        <h6> Versión 1.0.1.1983<br></br></h6>
+        
+
+
+       
+    </footer>
+    </div>
+
+</body>
+
+</html>
