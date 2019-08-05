@@ -73,6 +73,20 @@ if (isNaN(ITBI)) {
 
 if(isNaN(ITBD)){
     document.getElementById("resultadoITBD").value= "Introduzca los datos";
+};
+
+
+if(ITBI<ITBD){
+    document.getElementById("resultadoITBI").style.borderColor = '#ff7675';
+    document.getElementById("resultadoITBD").style.borderColor = '#f0f0f0';
+}
+else if (ITBI>ITBD){
+    document.getElementById("resultadoITBD").style.borderColor = '#ff7675';
+    document.getElementById("resultadoITBI").style.borderColor = '#f0f0f0';
+}
+else{
+    document.getElementById("resultadoITBI").style.borderColor = '#f0f0f0';
+    document.getElementById("resultadoITBD").style.borderColor = '#f0f0f0';
 }
 
 }
