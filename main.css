@@ -136,7 +136,9 @@ input[type=number] {
     display: -ms-flexbox;
     display: flex;
     text-align: center;
+    
     -ms-flex-pack: justify;
+        justify-content: space-between;
     list-style: none;
     }
     .listadoarterias >* {
