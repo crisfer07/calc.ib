@@ -1,3 +1,4 @@
+//variables
 function calculo(){
 
 
@@ -88,19 +89,6 @@ else{
     document.getElementById("resultadoITBD").style.borderColor = '#f0f0f0';
 };
 
-
-/*if(ITBI="" || ITBI="Introduzca los datos"){
-    document.getElementById("resultadoITBI").style.background = "rgb(215, 223, 220);";
-};*/
-
-
-/*if(ITBI=null){
-    document.getElementById("interpretacionI").style.display="none";
- }
- else{
-     document.getElementById("interpretacionI").style.display="block";
- };
-*/
 
 if(ITBI<=0.4){
     document.getElementById("interpretacionI").value= "Cuando el valor es menor o igual 0,4 se considera estenosis grave.";
