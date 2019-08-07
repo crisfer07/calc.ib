@@ -6,19 +6,19 @@
     
     <meta name="author" content= "Cristina Fernández Arquisola">
     <meta name="viewport" content="width= device-width,initial-scale=0.7">
-    <meta name= "description" content= "Esto es una calculadora del índice tobillo brazo elaborada por Cristina Fernández para la GAPSA">
+    <meta name= "description" content= "Esto es una calculadora del índice tobillo brazo elaborada por Cristina Fernández, introduzca los datos correspondientes y el cálculo se realizará de manera automática">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calculadora del Índice Tobillo Brazo</title>
 
-    <script src="https://kit.fontawesome.com/1c7bba2342.js"></script>
-
-        <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
 
     <link href="http://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet" type="text/css" />
     
-    <link rel= "stylesheet" href="main.css">
-    
+    <script src="https://kit.fontawesome.com/1c7bba2342.js"></script>
 
+    <link rel= "stylesheet" href="main.css">
+
+    
 
 </head>
 
@@ -44,7 +44,7 @@
     <p>Inserte los valores de tensión arterial en los recuardros correspondientes. 
         <br>
     La aplicación realizará el cálculo del Índice Tobillo Brazo de manera automática.<br></br>
-    El resultado en rojo indica el valor predictivo de riesgo cardiovascular.
+    El resultado en rojo es el valor predictivo de riesgo cardiovascular.
     <br></br>
     Si tiene dudas sobre la realización de la técnica o su interpretación, puede consultar este vídeo realizado por residentes de Enfermería Familiar y Comunitaria de Salamanca en el siguiente enlace:
     </p>
@@ -80,14 +80,14 @@
             </div>
             
             <div class="nombres">
-                <label>   TIBIAL POSTERIOR </label>
+                <label><i class="fas fa-chevron-left"></i>   TIBIAL POSTERIOR <i class="fas fa-chevron-right"></i></label>
                 
             </div>
             <div class="nombres">
-                <label> PEDIA </label>
+                <label><i class="fas fa-chevron-left"></i>      PEDIA  <i class="fas fa-chevron-right"></i></label>
             </div>
             <div class="nombres">
-                <label> HUMERAL </label>
+                <label><i class="fas fa-chevron-left"></i>     HUMERAL <i class="fas fa-chevron-right"></i></label>
             </div>
             
         </li> 
@@ -126,7 +126,7 @@
             </div>
                 
             <div class="nombres">
-                <label></i>  RESULTADO ITB </label>
+                <label><i class="fas fa-chevron-left"></i>  RESULTADO ITB  <i class="fas fa-chevron-right"></i></label>
                     
         </li> 
     
@@ -140,6 +140,40 @@
     </ul>
 </div>
 
+<div>
+    <ul class= "interpretacion">
+
+            <li class="interpretacionI">
+                <div>
+                <textarea name="interpretacionI" id="interpretacionI" class="inputstyle"
+                readonly></textarea>
+    
+                </div>
+            </li>
+        
+            <li>
+                    
+                <div class="nombres">
+                    <label><i class="fas fa-chevron-left"></i>  INTERPRETACIÓN  <i class="fas fa-chevron-right"></i></label>
+                        
+            </li> 
+        
+            <li class="interpretacionD">
+                <div>
+                    <label></label>
+                    <textarea name="interpretacionD" id="interpretacionD" class="inputstyle"
+                    readonly></textarea>
+                </div>
+            </li>
+        </ul>
+    <!-- <textarea type="text" class="interpretacionI" id="interpretacionI" ></textarea>
+    
+
+    <textarea type="text" class="interpretacionD" id="interpretacionD"></textarea>-->
+    
+    
+</div>
+
 <input type="hidden" id="resultadoI" placeholder="resultadoI" readonly>
 
 <input type="hidden" id="resultadoD" placeholder="resultadoD" readonly>
@@ -147,7 +181,7 @@
 <input type="hidden" id="resultadoH" placeholder="resultadoH" readonly>
 
     </form>
-<br></br>
+<br>
 
 
 
@@ -157,15 +191,23 @@
 
 </section>
 
-    <script src="app.js"></script>
+    <script src="apps.js"></script>
 
     <footer class= "bajo">
 
             <h6> Desarrollado por Cristina Fernández Arquisola 
                 <br>
                 (2019)
-                <br></br> </h6>
-<h6> La autora no se hace responsable de las consecuencias de su uso<br>
+                <br>
+
+               
+                          
+    
+            </h6>
+
+            
+                <a href="https://udsalamancaeir.wordpress.com/"> <img src="blog eir (4).png" alt="Logo Blog EIR EFyC" width="80" height="auto"></a>
+        <h6> La autora no se hace responsable de las consecuencias de su uso <br></br>
             Versión 1.0.3.198<br></br></h6>
         
 
