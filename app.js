@@ -1,4 +1,3 @@
-//variables
 function calculo(){
 
 
@@ -87,7 +86,57 @@ else if (ITBI>ITBD){
 else{
     document.getElementById("resultadoITBI").style.borderColor = '#f0f0f0';
     document.getElementById("resultadoITBD").style.borderColor = '#f0f0f0';
+};
+
+
+/*if(ITBI="" || ITBI="Introduzca los datos"){
+    document.getElementById("resultadoITBI").style.background = "rgb(215, 223, 220);";
+};*/
+
+
+/*if(ITBI=null){
+    document.getElementById("interpretacionI").style.display="none";
+ }
+ else{
+     document.getElementById("interpretacionI").style.display="block";
+ };
+*/
+
+if(ITBI<=0.4){
+    document.getElementById("interpretacionI").value= "Cuando el valor es menor o igual 0,4 se considera estenosis grave.";
 }
+else if(ITBI>0.4){
+    document.getElementById("interpretacionI").value= "Cuando el valor es mayor a 0,4 y menor de 0,9 se considera estenosis leve/moderada.";
+}
+else if(ITBI>0.9){
+    document.getElementById("interpretacionI").value= "Los valores situados entre 0,9 y 1,2 son considerados normales.";
+}
+else if (ITBI>1.2){
+    document.getElementById("interpretacionI").value= "Cuando el valor es mayor a 1,20 pueden existir calcificaciones arteriales.";
+}
+else{
+    document.getElementById("interpretacionI").value= "";
+};
+
+
+
+if(ITBD<=0.4){
+    document.getElementById("interpretacionD").value= "Cuando el valor es menor o igual 0,4 se considera estenosis grave.";
+}
+else if(ITBD>0.4){
+    document.getElementById("interpretacionD").value= "Cuando el valor es mayor a 0,4 y menor de 0,9 se considera estenosis leve/moderada.";
+}
+else if(ITBD>0.9){
+    document.getElementById("interpretacionD").value= "Los valores situados entre 0,9 y 1,2 son considerados normales.";
+}
+else if (ITBD>1.2){
+    document.getElementById("interpretacionD").value= "Cuando el valor es mayor a 1,20 pueden existir calcificaciones arteriales.";
+}
+else{
+    document.getElementById("interpretacionD").value= "";
+    
+};
+
 
 }
 
