@@ -76,27 +76,13 @@ if(isNaN(ITBD)){
 };
 
 
-if(ITBI<ITBD){
-    document.getElementById("resultadoITBI").style.borderColor = '#ff7675';
-    document.getElementById("resultadoITBD").style.borderColor = '#f0f0f0';
-}
-else if (ITBI>ITBD){
-    document.getElementById("resultadoITBD").style.borderColor = '#ff7675';
-    document.getElementById("resultadoITBI").style.borderColor = '#f0f0f0';
-}
-else{
-    document.getElementById("resultadoITBI").style.borderColor = '#f0f0f0';
-    document.getElementById("resultadoITBD").style.borderColor = '#f0f0f0';
-};
-
-
 if(ITBI<=0.4){
     document.getElementById("interpretacionI").value= "Cuando el valor es menor o igual 0,4 se considera estenosis grave.";
 }
-else if(ITBI>0.4){
+else if(ITBI<0.9){
     document.getElementById("interpretacionI").value= "Cuando el valor es mayor a 0,4 y menor de 0,9 se considera estenosis leve/moderada.";
 }
-else if(ITBI>0.9){
+else if(ITBI<=1.2){
     document.getElementById("interpretacionI").value= "Los valores situados entre 0,9 y 1,2 son considerados normales.";
 }
 else if (ITBI>1.2){
@@ -111,10 +97,10 @@ else{
 if(ITBD<=0.4){
     document.getElementById("interpretacionD").value= "Cuando el valor es menor o igual 0,4 se considera estenosis grave.";
 }
-else if(ITBD>0.4){
+else if(ITBD<0.9){
     document.getElementById("interpretacionD").value= "Cuando el valor es mayor a 0,4 y menor de 0,9 se considera estenosis leve/moderada.";
 }
-else if(ITBD>0.9){
+else if(ITBD<=1.2){
     document.getElementById("interpretacionD").value= "Los valores situados entre 0,9 y 1,2 son considerados normales.";
 }
 else if (ITBD>1.2){
@@ -122,7 +108,6 @@ else if (ITBD>1.2){
 }
 else{
     document.getElementById("interpretacionD").value= "";
-    
 };
 
 
